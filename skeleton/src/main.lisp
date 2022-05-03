@@ -1,7 +1,10 @@
 (defpackage <% @var name %>
   (:use :cl)
-  (:export :main)
+  (:export :main))
 (in-package :<% @var name %>)
+
+(defun hello (name)
+  (format t "This is the start of something great, ~a!~%" name))
 
 (defun help ()
   (format t "~&Usage:
@@ -13,8 +16,7 @@
   (when (member "-h" argv :test #'equal)
     (help)
     (uiop:quit))
-  (greet  (or (first argv)
-              "dear lisp user")))
+  (hello <% @var author %>))
 
 (defun main ()
   "Entry point for the executable.
