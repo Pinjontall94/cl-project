@@ -5,19 +5,20 @@
 
 ## Usage
 
-```common-lisp
-(cl-project:make-project #p"lib/cl-sample/"
-  :author "Eitaro Fukamachi"
-  :email "e.arrows@gmail.com"
-  :license "LLGPL"
-  :depends-on '(:clack :cl-annot))
-;-> writing /Users/fukamachi/Programs/lib/cl-sample/.gitignore
-;   writing /Users/fukamachi/Programs/lib/cl-sample/README.markdown
-;   writing /Users/fukamachi/Programs/lib/cl-sample/cl-sample-test.asd
-;   writing /Users/fukamachi/Programs/lib/cl-sample/cl-sample.asd
-;   writing /Users/fukamachi/Programs/lib/cl-sample/src/hogehoge.lisp
-;   writing /Users/fukamachi/Programs/lib/cl-sample/t/hogehoge.lisp
-;=> T
+```bash
+ros install Pinjontall94/cl-project
+ros exec make-project my-app --name my-app \
+--description "A test app" \
+--author "Sam Johnson (she/her)" \
+--license AGPLv3+ \
+--depends-on alexandria parenscript cl-react hunchentoot
+writing my-app/my-app.asd
+writing my-app/README.org
+writing my-app/README.markdown
+writing my-app/.gitignore
+writing my-app/roswell/my-app.ros
+writing my-app/src/main.lisp
+writing my-app/tests/main.lisp
 ```
 
 ## What's the difference from other generators?
