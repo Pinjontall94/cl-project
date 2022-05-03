@@ -1,8 +1,5 @@
 # CL-Project - Generate modern project skeletons
 
-[![Build Status](https://travis-ci.org/fukamachi/cl-project.svg?branch=master)](https://travis-ci.org/fukamachi/cl-project)
-[![Quicklisp dist](http://quickdocs.org/badge/cl-project.svg)](http://quickdocs.org/cl-project/)
-
 ## Usage
 
 ### Install roswell (if you haven't already)
