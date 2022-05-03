@@ -6,23 +6,16 @@
 ## Usage
 
 ```bash
-~ $ ros install Pinjontall94/cl-project
-~ $ ros exec make-project my-app --name my-app \
-> --description "A test app" \
-> --author "Sam Johnson (she/her)" \
-> --email "sambjohnson94@gmail.com" \
-> --license AGPLv3+ \
-> --depends-on alexandria parenscript cl-react hunchentoot
-writing my-app/my-app.asd
-writing my-app/README.org
-writing my-app/README.markdown
-writing my-app/.gitignore
-writing my-app/roswell/my-app.ros
-writing my-app/src/main.lisp
-writing my-app/tests/main.lisp
-~ $ cd my-app
-my-app $ chmod +x roswell/my-app.ros
-my-app $ sh roswell/my-app.ros
+$ ros install Pinjontall94/cl-project
+$ ros exec make-project my-app --name my-app \
+--description "A test app" \
+--author "Sam Johnson (she/her)" \
+--email "sambjohnson94@gmail.com" \
+--license AGPLv3+ \
+--depends-on alexandria parenscript cl-who hunchentoot
+$ cd my-app
+$ chmod +x roswell/my-app.ros
+$ sh roswell/my-app.ros
 ```
 
 ## What's the difference from other generators?
