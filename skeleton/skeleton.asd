@@ -10,7 +10,15 @@
   :description "<% @var description %>"
   <%- @unless without-tests %>
   :in-order-to ((test-op (test-op "<% @var name %>/tests")))
-  <%- @endunless %>)
+  <%- @endunless %>
+  ;; Build a binary:
+  ;; don't change this line.
+  :build-operation "program-op"
+  ;; binary name: adapt.
+  :build-pathname "<% @var name %>"
+  ;; entry point: here "main" is an exported symbol. Otherwise, use a double ::
+  :entry-point "<% @var name %>:main")
+
 
 (defsystem "<% @var name %>/tests"
   :author "<% @var author %>"
