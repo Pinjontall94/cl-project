@@ -5,6 +5,29 @@
 
 ## Usage
 
+### Install roswell (if you haven't already)
+
+* Mac/Linux/WSL
+Install [homebrew](https://brew.sh/)
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install roswell
+```
+
+* Windows
+Install [scoop](https://scoop.sh/)
+
+```Powershell
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+> iwr -useb get.scoop.sh | iex
+> scoop install roswell
+```
+
+(More information is available in Roswell's [installation instructions](https://github.com/roswell/roswell/wiki/Installation),
+but this should work for most use cases)
+
+### Install cl-project & make an app
 ```bash
 $ ros install Pinjontall94/cl-project
 $ ros exec make-project my-app --name my-app \
@@ -13,9 +36,20 @@ $ ros exec make-project my-app --name my-app \
 --email "sambjohnson94@gmail.com" \
 --license AGPLv3+ \
 --depends-on alexandria parenscript cl-who hunchentoot
+```
+
+### Run your app on the command line...
+```bash
 $ cd my-app
 $ chmod +x roswell/my-app.ros
 $ sh roswell/my-app.ros
+```
+
+### ...or compile it to a native binary!
+```bash
+$ cd my-app
+$ ros build roswell/my-app.ros # tip: add "--disable-compression" at the end of this line for even faster startup times!
+$ roswell/my-app
 ```
 
 ## What's the difference from other generators?
