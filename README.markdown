@@ -50,7 +50,15 @@ All parameters are optional.
 
 ## Author
 
-* Eitaro Fukamachi (e.arrows@gmail.com)
+* Sam Johnson (she/her) (sambjohnson94@gmail.com)
+
+## Acknowledgements & Special Thanks
+
+* Eitaro Fukamachi, author of the original cl-project and great lisper all around (e.arrows@gmail.com)
+
+* Vincent Dardel, author of [cl-cookieproject](https://github.com/vindarel/cl-cookieproject)
+(which this project's compilation modifications and roswell integration are heavily based on),
+as well as the fantastic [Common Lisp Cookbook](https://lispcookbook.github.io/cl-cookbook/)
 
 ## Copyright
 
