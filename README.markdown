@@ -87,10 +87,6 @@ All parameters are optional.
 (which this project's compilation modifications and roswell integration are heavily based on),
 as well as the fantastic [Common Lisp Cookbook](https://lispcookbook.github.io/cl-cookbook/)
 
-## Copyright
-
-Copyright (c) 2011 Eitaro Fukamachi (e.arrows@gmail.com)
-
 ## License
 
-Licensed under the LLGPL License.
+Licensed under the AGPL version 3 or later
