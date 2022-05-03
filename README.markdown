@@ -9,15 +9,13 @@
 
 * Mac/Linux/WSL
 Install [homebrew](https://brew.sh/)
-
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install roswell
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ brew install roswell
 ```
 
 * Windows
 Install [scoop](https://scoop.sh/)
-
 ```Powershell
 > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 > iwr -useb get.scoop.sh | iex
