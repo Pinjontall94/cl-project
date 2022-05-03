@@ -10,6 +10,7 @@ ros install Pinjontall94/cl-project
 ros exec make-project my-app --name my-app \
 --description "A test app" \
 --author "Sam Johnson (she/her)" \
+--email "sambjohnson94@gmail.com" \
 --license AGPLv3+ \
 --depends-on alexandria parenscript cl-react hunchentoot
 writing my-app/my-app.asd
