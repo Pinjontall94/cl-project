@@ -16,7 +16,7 @@
   (when (member "-h" argv :test #'equal)
     (help)
     (uiop:quit))
-  (hello "<% @var name %>"))
+  (hello "<% @var author %>"))
 
 (defun main ()
   "Entry point for the executable.
