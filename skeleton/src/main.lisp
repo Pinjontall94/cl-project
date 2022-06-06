@@ -6,10 +6,13 @@
 (defun hello (name)
   (format t "This is the start of something great, ~a!~%" name))
 
-(defun help ()
-  (format t "~&Usage:
+;; Your code here
 
-  <% @var name %> [name]~&"))
+
+
+;; CLI & Main functions
+(defun help ()
+  (format t "~&Usage: ~&~& <% @var name %> [name]~&"))
 
 (defun %main (argv)
   "Parse CLI args."
