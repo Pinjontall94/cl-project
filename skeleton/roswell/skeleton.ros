@@ -19,5 +19,5 @@ exec ros -Q -- $0 "$@"
 (defun main (&rest argv)
   "Optional name parameter."
   ;; CLI args parsing is done in %main.
-  (<% @var name %>::%main argv))
+  (<% @var name %>::cli-main argv))
 ;;; vim: set ft=lisp lisp:
